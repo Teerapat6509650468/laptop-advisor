@@ -1,4 +1,4 @@
-package dev.kritchalach.handytools;
+package tu.comsci.handytools;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

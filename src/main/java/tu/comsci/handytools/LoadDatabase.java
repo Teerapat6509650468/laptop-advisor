@@ -1,4 +1,4 @@
-package dev.kritchalach.handytools;
+package tu.comsci.handytools;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package dev.kritchalach.handytools;
+package tu.comsci.handytools;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

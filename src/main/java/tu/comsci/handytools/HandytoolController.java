@@ -1,4 +1,4 @@
-package dev.kritchalach.handytools;
+package tu.comsci.handytools;
 
 import java.util.List;
 import java.util.Optional;

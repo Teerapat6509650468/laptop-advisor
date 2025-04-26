@@ -1,4 +1,4 @@
-package dev.kritchalach.handytools;
+package tu.comsci.handytools;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
