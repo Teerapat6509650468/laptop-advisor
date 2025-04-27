@@ -1,0 +1,13 @@
+###
+GET http://localhost:8081/customers
+
+###
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "name": "Sophia Martinez",
+  "email": "sophia.martinez@example.com",
+  "phone": "555-3457",
+  "address": "808 Spruce St"
+}
