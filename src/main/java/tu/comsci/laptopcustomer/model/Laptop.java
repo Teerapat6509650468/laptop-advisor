@@ -1,4 +1,4 @@
-package tu.comsci.laptopadvisor.model;
+package tu.comsci.laptopcustomer.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

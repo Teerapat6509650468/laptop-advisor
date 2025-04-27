@@ -1,10 +1,10 @@
-package tu.comsci.laptopadvisor.service;
+package tu.comsci.laptopcustomer.service;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import tu.comsci.laptopadvisor.model.Laptop;
+import tu.comsci.laptopcustomer.model.Laptop;
 
 import java.util.List;
 
@@ -37,4 +37,5 @@ public class LaptopStoreClient {
 
         return response.getStatusCode().is2xxSuccessful();
     }
+
 }

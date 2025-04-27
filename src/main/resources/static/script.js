@@ -1,7 +1,7 @@
 document.getElementById('fetchLaptops').addEventListener('click', fetchLaptops);
 
 function fetchLaptops() {
-    fetch('http://localhost:8081/advisor/laptops')
+    fetch('http://localhost:8080/laptops')
         .then(response => response.json())
         .then(data => {
             const laptopsDiv = document.getElementById('laptops');
@@ -30,7 +30,7 @@ function fetchLaptops() {
 }
 
 function reserveLaptop(id) {
-    fetch(`http://localhost:8081/advisor/laptops/${id}/reserve`, {
+    fetch(`http://localhost:8080/laptops/${id}/reserve`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

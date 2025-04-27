@@ -1,4 +1,4 @@
-package tu.comsci.laptopadvisor.controller;
+package tu.comsci.laptopcustomer.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,18 +10,18 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestClientException;
 
-import tu.comsci.laptopadvisor.model.Laptop;
-import tu.comsci.laptopadvisor.service.LaptopStoreClient;
+import tu.comsci.laptopcustomer.model.Laptop;
+import tu.comsci.laptopcustomer.service.LaptopStoreClient;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/advisor")
-public class AdvisorController {
+@RequestMapping("/customer")
+public class LaptopCustomerController {
 
     private final LaptopStoreClient laptopStoreClient;
 
-    public AdvisorController(LaptopStoreClient laptopStoreClient) {
+    public LaptopCustomerController(LaptopStoreClient laptopStoreClient) {
         this.laptopStoreClient = laptopStoreClient;
     }
 
