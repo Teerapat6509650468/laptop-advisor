@@ -1,0 +1,6 @@
+###
+GET http://localhost:8081/advisor/laptops
+
+###
+POST http://localhost:8081/advisor/laptops/1/reserve
+Content-Type: application/json
