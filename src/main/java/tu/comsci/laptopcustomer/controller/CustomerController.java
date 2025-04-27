@@ -16,12 +16,6 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @GetMapping()
-    public ResponseEntity<Iterable<Customer>> getAllCustomers() {
-        Iterable<Customer> customers = customerService.getAllCustomers();
-        return new ResponseEntity<>(customers, HttpStatus.OK);
-    }
-
     @PostMapping
     public ResponseEntity<Customer> addCustomer(@RequestBody Customer customer) {
         Customer savedCustomer = customerService.addCustomer(customer);
