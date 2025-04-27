@@ -18,7 +18,7 @@ function fetchLaptops() {
                     <p>Storage: ${laptop.storage} GB</p>
                     <p>Price: $${laptop.price}</p>
                     <p>Status: ${laptop.reserved ? 'Reserved' : 'Available'}</p>
-                    <button class="reserve-btn" ${laptop.reserved ? 'disabled' : ''} onclick="reserveLaptop(${laptop.id})">
+                    <button class="reserve-btn" onclick="reserveLaptop(${laptop.id})">
                         ${laptop.reserved ? 'Reserved' : 'Reserve'}
                     </button>
                 `;
@@ -40,8 +40,10 @@ function reserveLaptop(id) {
             if (response.ok) {
                 alert('Laptop reserved successfully!');
                 fetchLaptops(); // Refresh the list
+            } else if (response.status === 400) { // Conflict status code
+                alert('Failed to reserve the laptop. It is already reserved.');
             } else {
-                alert('Failed to reserve the laptop. It might already be reserved.');
+                alert('Failed to reserve the laptop. Please try again.');
             }
         })
         .catch(error => console.error('Error reserving laptop:', error));
