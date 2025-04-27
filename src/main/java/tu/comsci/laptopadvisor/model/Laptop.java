@@ -20,6 +20,8 @@ public class Laptop {
     private int ram;
     private int storage;
     private double price;
+	
+	private boolean reserved = false;
 
     
 	// Custom constructor without id
